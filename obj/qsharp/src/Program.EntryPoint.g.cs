@@ -12,15 +12,15 @@ namespace QuantumHello
     using Microsoft.Quantum.Intrinsic;
     using Microsoft.Quantum.Simulation.Core;
 
-    internal class __QsEntryPoint__ : Microsoft.Quantum.EntryPointDriver.IEntryPoint<QVoid, Result>
+    internal class __QsEntryPoint__ : Microsoft.Quantum.EntryPointDriver.IEntryPoint<QVoid, Int64>
     {
         public string Summary => "";
         public System.Collections.Generic.IEnumerable<System.CommandLine.Option> Options => new System.CommandLine.Option[] { };
         public string DefaultSimulatorName => "QuantumSimulator";
         public string DefaultExecutionTarget => "Any";
-        public EntryPointInfo<QVoid, Result> Info => global::QuantumHello.GenerateRAndomBit.Info;
+        public EntryPointInfo<QVoid, Int64> Info => global::QuantumHello.SampleRandomNumber.Info;
         public IOperationFactory CreateDefaultCustomSimulator() => throw new InvalidOperationException();
         public QVoid CreateArgument(System.CommandLine.Parsing.ParseResult parseResult) => QVoid.Instance;
-        private static async System.Threading.Tasks.Task<int> Main(string[] args) => await new Microsoft.Quantum.EntryPointDriver.Driver<global::QuantumHello.GenerateRAndomBit, QVoid, Result>(new Microsoft.Quantum.EntryPointDriver.DriverSettings(simulatorOptionAliases: System.Collections.Immutable.ImmutableList.Create("--simulator", "-s"), quantumSimulatorName: "QuantumSimulator", toffoliSimulatorName: "ToffoliSimulator", resourcesEstimatorName: "ResourcesEstimator"), new __QsEntryPoint__()).Run(args);
+        private static async System.Threading.Tasks.Task<int> Main(string[] args) => await new Microsoft.Quantum.EntryPointDriver.Driver<global::QuantumHello.SampleRandomNumber, QVoid, Int64>(new Microsoft.Quantum.EntryPointDriver.DriverSettings(simulatorOptionAliases: System.Collections.Immutable.ImmutableList.Create("--simulator", "-s"), quantumSimulatorName: "QuantumSimulator", toffoliSimulatorName: "ToffoliSimulator", resourcesEstimatorName: "ResourcesEstimator"), new __QsEntryPoint__()).Run(args);
     }
 }
