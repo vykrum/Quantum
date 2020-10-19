@@ -30,7 +30,9 @@ namespace QuantumHello {
 
     @EntryPoint()
     operation SampleRandomNumber() : Int {
+        // Minimum Value
         let min = 30;
+        // Maximum Value
         let max = 40;
         Message ($"Sampling a Random Number between {min} and {max} : ");
         return SampleRandomNumberInRange(min,max);
