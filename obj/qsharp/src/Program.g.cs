@@ -214,13 +214,13 @@ namespace QuantumHello
 
         public override Func<QVoid, Int64> __Body__ => (__in__) =>
         {
-#line 33 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-            var min = 30L;
 #line 34 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-            var max = 40L;
-#line 35 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-            Message__.Apply(String.Format("Sampling a Random Number between {0} and {1} : ", min, max));
+            var min = 30L;
 #line 36 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+            var max = 40L;
+#line 37 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+            Message__.Apply(String.Format("Sampling a Random Number between {0} and {1} : ", min, max));
+#line 38 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
             return SampleRandomNumberInRange__.Apply((min, max));
         }
 
