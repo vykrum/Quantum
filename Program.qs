@@ -16,7 +16,7 @@ namespace QuantumHello {
         }
     }
 
-    operation SampleRandomNumberInRange(max : Int) : Int {
+    operation SampleRandomNumberInRange(min : Int,max : Int) : Int {
         mutable output = 0;
         repeat{
             mutable bits = new Result [0];
@@ -24,14 +24,15 @@ namespace QuantumHello {
                 set bits += [GenerateRandomBit()];
             }
             set output = ResultArrayAsInt(bits);
-        } until (output <= max);
+        } until (output >= min and output <= max);
         return output;
     }
 
     @EntryPoint()
     operation SampleRandomNumber() : Int {
-        let max = 50;
-        Message ($"Sampling a Random Number between 0 and {max} : ");
-        return SampleRandomNumberInRange(max);
+        let min = 30;
+        let max = 40;
+        Message ($"Sampling a Random Number between {min} and {max} : ");
+        return SampleRandomNumberInRange(min,max);
     }
 }
