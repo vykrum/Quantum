@@ -76,7 +76,7 @@ namespace QuantumHello {
         }
     }
 
-    @EntryPoint()
+
     operation GenerateRandomNumber() : Int {
         using (qubits = Qubit[3]) {
             ApplyToEach(H, qubits);
@@ -89,6 +89,24 @@ namespace QuantumHello {
             Message (" ");
             DumpMachine();
             return BoolArrayAsInt(ResultArrayAsBoolArray(result));
+        }
+    }
+
+    @EntryPoint()
+    operation GenerateRandomNumberMulQubit() : Int{
+        using (qubits = Qubit[3]) {
+            ApplyToEach (H,qubits);
+            Message ("The qubit register in uniform superposition: ");
+            DumpMachine();
+            Message (" ");
+            mutable results = new Result[0];
+            for (q in qubits) {
+                Message (" ");
+                set results += [M(q)];
+                DumpMachine();
+            }
+            Message (" ");
+            return BoolArrayAsInt(ResultArrayAsBoolArray(results));
         }
     }
 }

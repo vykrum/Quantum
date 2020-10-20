@@ -18,9 +18,9 @@ namespace QuantumHello
         public System.Collections.Generic.IEnumerable<System.CommandLine.Option> Options => new System.CommandLine.Option[] { };
         public string DefaultSimulatorName => "QuantumSimulator";
         public string DefaultExecutionTarget => "Any";
-        public EntryPointInfo<QVoid, Int64> Info => global::QuantumHello.GenerateRandomNumber.Info;
+        public EntryPointInfo<QVoid, Int64> Info => global::QuantumHello.GenerateRandomNumberMulQubit.Info;
         public IOperationFactory CreateDefaultCustomSimulator() => throw new InvalidOperationException();
         public QVoid CreateArgument(System.CommandLine.Parsing.ParseResult parseResult) => QVoid.Instance;
-        private static async System.Threading.Tasks.Task<int> Main(string[] args) => await new Microsoft.Quantum.EntryPointDriver.Driver<global::QuantumHello.GenerateRandomNumber, QVoid, Int64>(new Microsoft.Quantum.EntryPointDriver.DriverSettings(simulatorOptionAliases: System.Collections.Immutable.ImmutableList.Create("--simulator", "-s"), quantumSimulatorName: "QuantumSimulator", toffoliSimulatorName: "ToffoliSimulator", resourcesEstimatorName: "ResourcesEstimator"), new __QsEntryPoint__()).Run(args);
+        private static async System.Threading.Tasks.Task<int> Main(string[] args) => await new Microsoft.Quantum.EntryPointDriver.Driver<global::QuantumHello.GenerateRandomNumberMulQubit, QVoid, Int64>(new Microsoft.Quantum.EntryPointDriver.DriverSettings(simulatorOptionAliases: System.Collections.Immutable.ImmutableList.Create("--simulator", "-s"), quantumSimulatorName: "QuantumSimulator", toffoliSimulatorName: "ToffoliSimulator", resourcesEstimatorName: "ResourcesEstimator"), new __QsEntryPoint__()).Run(args);
     }
 }
