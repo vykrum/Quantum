@@ -27,12 +27,12 @@ using Microsoft.Quantum.Simulation.Core;
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateRandomNumber\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":79,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":31}},\"Documentation\":[]}")]
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateRandomNumberMulQubit\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":95,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":39}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateRandomNumberMulQubit\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":95,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":39}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference1\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":115,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"Result\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference1\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":115,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference2\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":135,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference2\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":135,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference3\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Core\",\"Name\":\"EntryPoint\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]}}]},\"Argument\":{\"Item1\":{\"Case\":\"UnitValue\"},\"Item2\":[],\"Item3\":{\"Case\":\"UnitType\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":12},\"Item2\":{\"Line\":1,\"Column\":14}}]}},\"Offset\":{\"Item1\":144,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":145,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference3\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":145,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference1\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":114,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"Result\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference1\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":114,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference2\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":134,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference2\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":134,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference3\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Core\",\"Name\":\"EntryPoint\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]}}]},\"Argument\":{\"Item1\":{\"Case\":\"UnitValue\"},\"Item2\":[],\"Item3\":{\"Case\":\"UnitType\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":12},\"Item2\":{\"Line\":1,\"Column\":14}}]}},\"Offset\":{\"Item1\":143,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":144,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"TestInterference3\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":144,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
 #line hidden
 namespace QuantumHello
 {
@@ -656,7 +656,7 @@ namespace QuantumHello
         }
     }
 
-    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 96, 116)]
+    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 96, 115)]
     public partial class GenerateRandomNumberMulQubit : Operation<QVoid, Int64>, ICallable
     {
         public GenerateRandomNumberMulQubit(IOperationFactory m) : base(m)
@@ -796,7 +796,7 @@ namespace QuantumHello
         }
     }
 
-    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 116, 136)]
+    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 115, 135)]
     public partial class TestInterference1 : Operation<QVoid, Result>, ICallable
     {
         public TestInterference1(IOperationFactory m) : base(m)
@@ -845,39 +845,39 @@ namespace QuantumHello
         {
 #line hidden
             {
-#line 117 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 116 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                 var q = Allocate__.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 118 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 117 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Message__.Apply("At the beginning the qubit is in the state |0>");
+#line 118 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply(" ");
 #line 119 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-                    Message__.Apply(" ");
+                    Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
 #line 120 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-                    Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
+                    Microsoft__Quantum__Intrinsic__H.Apply(q);
 #line 121 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-                    Microsoft__Quantum__Intrinsic__H.Apply(q);
-#line 122 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Message__.Apply("After applying H the qubit is in uniform supoerposition");
+#line 122 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply(" ");
 #line 123 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-                    Message__.Apply(" ");
+                    Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
 #line 124 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-                    Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
-#line 125 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Microsoft__Quantum__Intrinsic__H.Apply(q);
-#line 126 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 125 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Message__.Apply("If we reapply H the qubit returns to the state |0>");
+#line 126 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply(" ");
 #line 127 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-                    Message__.Apply(" ");
-#line 128 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
-#line 129 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 128 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Message__.Apply("If we measure we always obtain |0>");
-#line 130 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 129 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Message__.Apply(" ");
-#line 131 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 130 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     return Microsoft__Quantum__Measurement__MResetZ.Apply(q);
                 }
 #line hidden
@@ -917,7 +917,7 @@ namespace QuantumHello
         }
     }
 
-    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 136, 146)]
+    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 135, 145)]
     public partial class TestInterference2 : Operation<QVoid, QVoid>, ICallable
     {
         public TestInterference2(IOperationFactory m) : base(m)
@@ -966,19 +966,19 @@ namespace QuantumHello
         {
 #line hidden
             {
-#line 137 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 136 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                 var q = Allocate__.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 138 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 137 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Microsoft__Quantum__Intrinsic__X.Apply(q);
-#line 139 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 138 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Microsoft__Quantum__Intrinsic__H.Apply(q);
-#line 140 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 139 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
-#line 141 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 140 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Reset__.Apply(q);
                 }
 #line hidden
@@ -1021,7 +1021,7 @@ namespace QuantumHello
         }
     }
 
-    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 146, -1)]
+    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 145, -1)]
     public partial class TestInterference3 : Operation<QVoid, QVoid>, ICallable
     {
         public TestInterference3(IOperationFactory m) : base(m)
@@ -1071,19 +1071,19 @@ namespace QuantumHello
         {
 #line hidden
             {
-#line 147 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 146 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                 var q = Allocate__.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 148 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 147 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Microsoft__Quantum__Intrinsic__Y.Apply(q);
-#line 149 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 148 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Microsoft__Quantum__Intrinsic__H.Apply(q);
-#line 150 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 149 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
-#line 151 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 150 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Reset__.Apply(q);
                 }
 #line hidden
