@@ -111,8 +111,7 @@ namespace QuantumHello {
     }
 
 // Exploring Interference
-
-    @EntryPoint()
+    
     operation TestInterference1() : Result {
         using (q = Qubit()) {
             Message ("At the beginning the qubit is in the state |0>");
@@ -131,6 +130,28 @@ namespace QuantumHello {
             return MResetZ(q);
         }
     }
+
+    
+    operation TestInterference2() : Unit{
+        using (q = Qubit()) {
+            X(q);
+            H(q);
+            DumpMachine();
+            Reset(q);
+        }
+    }
+
+    @EntryPoint()
+    operation TestInterference3() : Unit {
+        using (q = Qubit()) {
+            Y(q);
+            H(q);
+            DumpMachine();
+            Reset(q);
+        }
+    }
+
+
 
 
 }
