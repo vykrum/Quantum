@@ -5,6 +5,7 @@ namespace QuantumHello {
     open Microsoft.Quantum.Math;
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Diagnostics;
+    open Microsoft.Quantum.Arrays;
 
 
     operation GenerateRandomBit() : Result {
@@ -60,7 +61,7 @@ namespace QuantumHello {
         }
     }
 
-    @EntryPoint()
+    
     operation GenerateSpecificState(alpha : Double) : Result {
         using (q = Qubit()) {
             Ry(2.0 * ArcCos(Sqrt(alpha)),q);
@@ -72,6 +73,22 @@ namespace QuantumHello {
             let skewed = M(q);
             Reset (q);
             return skewed;
+        }
+    }
+
+    @EntryPoint()
+    operation GenerateRandomNumber() : Int {
+        using (qubits = Qubit[3]) {
+            ApplyToEach(H, qubits);
+            Message ("The qubit register in a uniform superposition: ");
+            Message (" ");
+            DumpMachine();
+            let result = ForEach(MResetZ, qubits);
+            //ForEach(Reset, qubits);
+            Message ("Measuring collapses qubits to a basis state");
+            Message (" ");
+            DumpMachine();
+            return BoolArrayAsInt(ResultArrayAsBoolArray(result));
         }
     }
 }
