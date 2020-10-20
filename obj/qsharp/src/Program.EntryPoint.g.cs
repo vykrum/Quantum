@@ -12,15 +12,15 @@ namespace QuantumHello
     using Microsoft.Quantum.Intrinsic;
     using Microsoft.Quantum.Simulation.Core;
 
-    internal class __QsEntryPoint__ : Microsoft.Quantum.EntryPointDriver.IEntryPoint<QVoid, Int64>
+    internal class __QsEntryPoint__ : Microsoft.Quantum.EntryPointDriver.IEntryPoint<Double, Result>
     {
         public string Summary => "";
-        public System.Collections.Generic.IEnumerable<System.CommandLine.Option> Options => new System.CommandLine.Option[] { };
+        public System.Collections.Generic.IEnumerable<System.CommandLine.Option> Options => new System.CommandLine.Option[] { Microsoft.Quantum.EntryPointDriver.Options.CreateOption<Double>("--" + System.CommandLine.Parsing.StringExtensions.ToKebabCase("alpha"), "") };
         public string DefaultSimulatorName => "QuantumSimulator";
         public string DefaultExecutionTarget => "Any";
-        public EntryPointInfo<QVoid, Int64> Info => global::QuantumHello.SampleRandomNumber.Info;
+        public EntryPointInfo<Double, Result> Info => global::QuantumHello.GenerateSpecificState.Info;
         public IOperationFactory CreateDefaultCustomSimulator() => throw new InvalidOperationException();
-        public QVoid CreateArgument(System.CommandLine.Parsing.ParseResult parseResult) => QVoid.Instance;
-        private static async System.Threading.Tasks.Task<int> Main(string[] args) => await new Microsoft.Quantum.EntryPointDriver.Driver<global::QuantumHello.SampleRandomNumber, QVoid, Int64>(new Microsoft.Quantum.EntryPointDriver.DriverSettings(simulatorOptionAliases: System.Collections.Immutable.ImmutableList.Create("--simulator", "-s"), quantumSimulatorName: "QuantumSimulator", toffoliSimulatorName: "ToffoliSimulator", resourcesEstimatorName: "ResourcesEstimator"), new __QsEntryPoint__()).Run(args);
+        public Double CreateArgument(System.CommandLine.Parsing.ParseResult parseResult) => parseResult.ValueForOption<Double>("--" + System.CommandLine.Parsing.StringExtensions.ToKebabCase("alpha"));
+        private static async System.Threading.Tasks.Task<int> Main(string[] args) => await new Microsoft.Quantum.EntryPointDriver.Driver<global::QuantumHello.GenerateSpecificState, Double, Result>(new Microsoft.Quantum.EntryPointDriver.DriverSettings(simulatorOptionAliases: System.Collections.Immutable.ImmutableList.Create("--simulator", "-s"), quantumSimulatorName: "QuantumSimulator", toffoliSimulatorName: "ToffoliSimulator", resourcesEstimatorName: "ResourcesEstimator"), new __QsEntryPoint__()).Run(args);
     }
 }

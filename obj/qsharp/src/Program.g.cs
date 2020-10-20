@@ -13,16 +13,20 @@ using Microsoft.Quantum.Core;
 using Microsoft.Quantum.Intrinsic;
 using Microsoft.Quantum.Simulation.Core;
 
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateRandomBit\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":8,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"Result\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateRandomBit\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":8,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"SampleRandomNumberInRange\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":18,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":36}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"min\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":37},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"max\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":47},\"Item2\":{\"Line\":1,\"Column\":50}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"SampleRandomNumberInRange\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":18,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":36}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"SampleRandomNumber\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Core\",\"Name\":\"EntryPoint\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]}}]},\"Argument\":{\"Item1\":{\"Case\":\"UnitValue\"},\"Item2\":[],\"Item3\":{\"Case\":\"UnitType\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":12},\"Item2\":{\"Line\":1,\"Column\":14}}]}},\"Offset\":{\"Item1\":30,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":31,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateRandomBit\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":9,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"Result\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateRandomBit\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":9,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"SampleRandomNumberInRange\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":19,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":36}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"min\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":37},\"Item2\":{\"Line\":1,\"Column\":40}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"max\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":47},\"Item2\":{\"Line\":1,\"Column\":50}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"SampleRandomNumberInRange\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":19,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":36}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"SampleRandomNumber\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":31,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"SampleRandomNumber\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":31,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateRandomBitAgain\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":41,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"Result\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateRandomBitAgain\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":41,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":33}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateSpecificState\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Core\",\"Name\":\"EntryPoint\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]}}]},\"Argument\":{\"Item1\":{\"Case\":\"UnitValue\"},\"Item2\":[],\"Item3\":{\"Case\":\"UnitType\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":12},\"Item2\":{\"Line\":1,\"Column\":14}}]}},\"Offset\":{\"Item1\":62,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":63,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"alpha\"]},\"Type\":{\"Case\":\"Double\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":38}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Double\"},\"ReturnType\":{\"Case\":\"Result\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"QuantumHello\",\"Name\":\"GenerateSpecificState\"},\"Attributes\":[],\"SourceFile\":\"/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs\",\"Position\":{\"Item1\":63,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
 #line hidden
 namespace QuantumHello
 {
-    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 9, 19)]
+    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 10, 20)]
     public partial class GenerateRandomBit : Operation<QVoid, Result>, ICallable
     {
         public GenerateRandomBit(IOperationFactory m) : base(m)
@@ -59,15 +63,15 @@ namespace QuantumHello
         {
 #line hidden
             {
-#line 10 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 11 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                 var q = Allocate__.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 12 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 13 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     Microsoft__Quantum__Intrinsic__H.Apply(q);
-#line 15 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 16 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     return Microsoft__Quantum__Measurement__MResetZ.Apply(q);
                 }
 #line hidden
@@ -105,7 +109,7 @@ namespace QuantumHello
         }
     }
 
-    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 19, 32)]
+    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 20, 32)]
     public partial class SampleRandomNumberInRange : Operation<(Int64,Int64), Int64>, ICallable
     {
         public SampleRandomNumberInRange(IOperationFactory m) : base(m)
@@ -144,22 +148,22 @@ namespace QuantumHello
         public override Func<(Int64,Int64), Int64> __Body__ => (__in__) =>
         {
             var (min,max) = __in__;
-#line 20 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-            var output = 0L;
 #line 21 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+            var output = 0L;
+#line 22 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
             while (true)
             {
-#line 22 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
-                var bits = QArray<Result>.Create(0L);
 #line 23 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                var bits = QArray<Result>.Create(0L);
+#line 24 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                 foreach (var idxBit in new QRange(1L, Microsoft__Quantum__Math__BitSizeI.Apply(max)))
 #line hidden
                 {
-#line 24 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 25 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                     bits = QArray<Result>.Add(bits, new QArray<Result>(GenerateRandomBit__.Apply(QVoid.Instance)));
                 }
 
-#line 26 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 27 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
                 output = Microsoft__Quantum__Convert__ResultArrayAsInt.Apply(bits?.Copy());
                 if (((output >= min) && (output <= max)))
                 {
@@ -170,7 +174,7 @@ namespace QuantumHello
                 }
             }
 
-#line 28 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+#line 29 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
             return output;
         }
 
@@ -190,7 +194,7 @@ namespace QuantumHello
         }
     }
 
-    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 32, -1)]
+    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 32, 42)]
     public partial class SampleRandomNumber : Operation<QVoid, Int64>, ICallable
     {
         public SampleRandomNumber(IOperationFactory m) : base(m)
@@ -199,7 +203,6 @@ namespace QuantumHello
 
         String ICallable.Name => "SampleRandomNumber";
         String ICallable.FullName => "QuantumHello.SampleRandomNumber";
-        public static EntryPointInfo<QVoid, Int64> Info => new EntryPointInfo<QVoid, Int64>(typeof(SampleRandomNumber));
         protected ICallable<String, QVoid> Message__
         {
             get;
@@ -236,6 +239,272 @@ namespace QuantumHello
         public static System.Threading.Tasks.Task<Int64> Run(IOperationFactory __m__)
         {
             return __m__.Run<SampleRandomNumber, QVoid, Int64>(QVoid.Instance);
+        }
+    }
+
+    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 42, 64)]
+    public partial class GenerateRandomBitAgain : Operation<QVoid, Result>, ICallable
+    {
+        public GenerateRandomBitAgain(IOperationFactory m) : base(m)
+        {
+        }
+
+        String ICallable.Name => "GenerateRandomBitAgain";
+        String ICallable.FullName => "QuantumHello.GenerateRandomBitAgain";
+        protected Allocate Allocate__
+        {
+            get;
+            set;
+        }
+
+        protected Release Release__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<String, QVoid> Message__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Microsoft__Quantum__Diagnostics__DumpMachine
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Qubit, Result> M__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Qubit, QVoid> Reset__
+        {
+            get;
+            set;
+        }
+
+        public override Func<QVoid, Result> __Body__ => (__in__) =>
+        {
+#line hidden
+            {
+#line 43 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                var q = Allocate__.Apply();
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line 44 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply("Initial state of Qubit");
+#line 45 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
+#line 46 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply(" ");
+#line 47 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Microsoft__Quantum__Intrinsic__H.Apply(q);
+#line 48 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply("Applying Hadamard Gate to Qubit");
+#line 49 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
+#line 50 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply(" ");
+#line 51 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    var randomBit = M__.Apply(q);
+#line 52 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply("Measuring Qubit");
+#line 53 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
+#line 54 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply(" ");
+#line 55 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Reset__.Apply(q);
+#line 56 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply("Resetting Qubit");
+#line 57 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
+#line 58 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply(" ");
+#line 59 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    return randomBit;
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release__.Apply(q);
+                    }
+                }
+            }
+        }
+
+        ;
+        public override void __Init__()
+        {
+            this.Allocate__ = this.__Factory__.Get<Allocate>(typeof(global::Microsoft.Quantum.Intrinsic.Allocate));
+            this.Release__ = this.__Factory__.Get<Release>(typeof(global::Microsoft.Quantum.Intrinsic.Release));
+            this.Message__ = this.__Factory__.Get<ICallable<String, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Message));
+            this.Microsoft__Quantum__Diagnostics__DumpMachine = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Diagnostics.DumpMachine<>));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.M__ = this.__Factory__.Get<ICallable<Qubit, Result>>(typeof(global::Microsoft.Quantum.Intrinsic.M));
+            this.Reset__ = this.__Factory__.Get<ICallable<Qubit, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Reset));
+        }
+
+        public override IApplyData __DataIn__(QVoid data) => data;
+        public override IApplyData __DataOut__(Result data) => new QTuple<Result>(data);
+        public static System.Threading.Tasks.Task<Result> Run(IOperationFactory __m__)
+        {
+            return __m__.Run<GenerateRandomBitAgain, QVoid, Result>(QVoid.Instance);
+        }
+    }
+
+    [SourceLocation("/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs", OperationFunctor.Body, 64, -1)]
+    public partial class GenerateSpecificState : Operation<Double, Result>, ICallable
+    {
+        public GenerateSpecificState(IOperationFactory m) : base(m)
+        {
+        }
+
+        String ICallable.Name => "GenerateSpecificState";
+        String ICallable.FullName => "QuantumHello.GenerateSpecificState";
+        public static EntryPointInfo<Double, Result> Info => new EntryPointInfo<Double, Result>(typeof(GenerateSpecificState));
+        protected Allocate Allocate__
+        {
+            get;
+            set;
+        }
+
+        protected Release Release__
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Double,Qubit)> Microsoft__Quantum__Intrinsic__Ry
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Double> Microsoft__Quantum__Math__ArcCos
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Double> Microsoft__Quantum__Math__Sqrt
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<String, QVoid> Message__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Microsoft__Quantum__Diagnostics__DumpMachine
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Qubit, Result> M__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Qubit, QVoid> Reset__
+        {
+            get;
+            set;
+        }
+
+        public override Func<Double, Result> __Body__ => (__in__) =>
+        {
+            var alpha = __in__;
+#line hidden
+            {
+#line 65 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                var q = Allocate__.Apply();
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line 66 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Microsoft__Quantum__Intrinsic__Ry.Apply(((2D * Microsoft__Quantum__Math__ArcCos.Apply(Microsoft__Quantum__Math__Sqrt.Apply(alpha))), q));
+#line 67 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply("Qubit is in the desired state");
+#line 68 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply(" ");
+#line 69 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Microsoft__Quantum__Diagnostics__DumpMachine.Apply(QVoid.Instance);
+#line 70 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply(" ");
+#line 71 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Message__.Apply("Your skewed Random Bit is");
+#line 72 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    var skewed = M__.Apply(q);
+#line 73 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    Reset__.Apply(q);
+#line 74 "/Users/vikramsubbaiah/Desktop/QuantumHello/Program.qs"
+                    return skewed;
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release__.Apply(q);
+                    }
+                }
+            }
+        }
+
+        ;
+        public override void __Init__()
+        {
+            this.Allocate__ = this.__Factory__.Get<Allocate>(typeof(global::Microsoft.Quantum.Intrinsic.Allocate));
+            this.Release__ = this.__Factory__.Get<Release>(typeof(global::Microsoft.Quantum.Intrinsic.Release));
+            this.Microsoft__Quantum__Intrinsic__Ry = this.__Factory__.Get<IUnitary<(Double,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.Ry));
+            this.Microsoft__Quantum__Math__ArcCos = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.ArcCos));
+            this.Microsoft__Quantum__Math__Sqrt = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.Sqrt));
+            this.Message__ = this.__Factory__.Get<ICallable<String, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Message));
+            this.Microsoft__Quantum__Diagnostics__DumpMachine = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Diagnostics.DumpMachine<>));
+            this.M__ = this.__Factory__.Get<ICallable<Qubit, Result>>(typeof(global::Microsoft.Quantum.Intrinsic.M));
+            this.Reset__ = this.__Factory__.Get<ICallable<Qubit, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Reset));
+        }
+
+        public override IApplyData __DataIn__(Double data) => new QTuple<Double>(data);
+        public override IApplyData __DataOut__(Result data) => new QTuple<Result>(data);
+        public static System.Threading.Tasks.Task<Result> Run(IOperationFactory __m__, Double alpha)
+        {
+            return __m__.Run<GenerateSpecificState, Double, Result>(alpha);
         }
     }
 }
