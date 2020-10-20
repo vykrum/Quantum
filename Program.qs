@@ -141,7 +141,7 @@ namespace QuantumHello {
         }
     }
 
-    @EntryPoint()
+    
     operation TestInterference3() : Unit {
         using (q = Qubit()) {
             Y(q);
@@ -151,6 +151,9 @@ namespace QuantumHello {
         }
     }
 
+// Exploring Entanglement
+
+    //@EntryPoint()
 
 
 
