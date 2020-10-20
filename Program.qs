@@ -92,7 +92,7 @@ namespace QuantumHello {
         }
     }
 
-    @EntryPoint()
+    
     operation GenerateRandomNumberMulQubit() : Int{
         using (qubits = Qubit[3]) {
             ApplyToEach (H,qubits);
@@ -109,4 +109,28 @@ namespace QuantumHello {
             return BoolArrayAsInt(ResultArrayAsBoolArray(results));
         }
     }
+
+// Exploring Interference
+
+    @EntryPoint()
+    operation TestInterference1() : Result {
+        using (q = Qubit()) {
+            Message ("At the beginning the qubit is in the state |0>");
+            Message (" ");
+            DumpMachine();
+            H(q);
+            Message ("After applying H the qubit is in uniform supoerposition");
+            Message (" ");
+            DumpMachine();
+            H(q);
+            Message ("If we reapply H the qubit returns to the state |0>");
+            Message (" ");
+            DumpMachine();
+            Message ("If we measure we always obtain |0>");
+            Message (" ");
+            return MResetZ(q);
+        }
+    }
+
+
 }
