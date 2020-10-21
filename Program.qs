@@ -153,7 +153,7 @@ namespace QuantumHello {
 
 // Exploring Entanglement
 
-    @EntryPoint()
+    
     operation TestingEntanglement1() : Result[] {
         using (qubits = Qubit[2]) {
             H(qubits[0]);
@@ -169,6 +169,19 @@ namespace QuantumHello {
 
     }
 
-
+    @EntryPoint()
+    operation TestingEntanglement2() : Result[] {
+        using (qubits = Qubit[2]) {
+            H(qubits[0]);
+            Controlled X ([qubits[0]],qubits[1]);
+            Message ("Entangled state before measurement");
+            DumpMachine();
+            Message (" ");
+            let results = MultiM(qubits);
+            Message ("State after measurement");
+            DumpMachine();
+            return results;
+        }
+    }
 
 }
