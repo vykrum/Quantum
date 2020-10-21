@@ -141,7 +141,7 @@ namespace QuantumHello {
         }
     }
 
-    @EntryPoint()
+    
     operation TestInterference3() : Unit {
         using (q = Qubit()) {
             Y(q);
@@ -153,7 +153,21 @@ namespace QuantumHello {
 
 // Exploring Entanglement
 
-    //@EntryPoint()
+    @EntryPoint()
+    operation TestingEntanglement1() : Result[] {
+        using (qubits = Qubit[2]) {
+            H(qubits[0]);
+            CNOT (qubits[0],qubits[1]);
+            Message ("Entangled state before measurement");
+            DumpMachine();
+            Message (" ");
+            let result = MultiM(qubits);
+            Message ("State after measurement");
+            DumpMachine();
+            return result;
+        }
+
+    }
 
 
 
