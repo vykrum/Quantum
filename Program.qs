@@ -6,8 +6,14 @@ namespace QuantumHello {
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Diagnostics;
     open Microsoft.Quantum.Arrays;
+    open Microsoft.Quantum.Random;
+    open Microsoft.Quantum.Arithmetic;
+    open Microsoft.Quantum.Oracles;
+    open Microsoft.Quantum.Characterization;
+  
 
 
+    // Random Qubit
     operation GenerateRandomBit() : Result {
         using (q = Qubit()){
             // Put the qubit to superposition
@@ -151,9 +157,8 @@ namespace QuantumHello {
         }
     }
 
-// Exploring Entanglement
+    // Exploring Entanglement
 
-    
     operation TestingEntanglement1() : Result[] {
         using (qubits = Qubit[2]) {
             H(qubits[0]);
