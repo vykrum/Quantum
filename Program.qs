@@ -29,7 +29,44 @@ namespace QuantumHello {
         }
     }
 
+    operation MarkValidVertexColoring(
+        edges : (Int, Int)[], 
+        colorsRegister : Qubit[], 
+        target : Qubit
+    ) : Unit is Adj+Ctl {
+        let nEdges = Length(edges);
+        // Split the register that encodes the colors into an array of two-qubit registers, one per color.
+        let colors = Chunks(2, colorsRegister);
+        // Allocate one extra qubit per edge to mark the edges that connect vertices with the same color.
+        using (conflictQubits = Qubit[nEdges]) {
+            within {
+                for (((start, end), conflictQubit) in Zipped(edges, conflictQubits)) {
+                    // Check that the endpoints have different colors: apply MarkColorEquality operation; 
+                    // if the colors are the same, the result will be 1, indicating a conflict.
+                    MarkColorEquality(colors[start], colors[end], conflictQubit);
+                }
+            } apply {
+                // If there are no conflicts (all qubits are in 0 state), the vertex coloring is valid.
+                (ControlledOnInt(0, X))(conflictQubits, target);
+            }
+        }
+    }
+
     @EntryPoint()
+    operation ShowColorValidationCheck() : Unit {
+        let nVertices = 5;
+        let edges = [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (3, 4)];
+        let coloring = [false, false, true, false, false, true, true, true, false, true];
+        using ((coloringRegister, target) = (Qubit[2 * nVertices], Qubit())) {
+            ApplyPauliFromBitString(PauliX, true, coloring, coloringRegister);
+            MarkValidVertexColoring(edges, coloringRegister, target);
+            let isColoringValid = M(target) == One;
+            Message($"The coloring is {isColoringValid ? "valid" | "invalid"}");
+            ResetAll(coloringRegister);
+        }
+    }
+
+
     operation ShowColorEqualityCheck() : Unit {
         using ((c0,c1,target) = (Qubit[2],Qubit[2],Qubit())) {
             // Leave register c0 in the |00⟩ state
@@ -42,7 +79,7 @@ namespace QuantumHello {
             MarkColorEquality(c0,c1,target);
             Message (" ");
             Message ("The state of the qubits c1 and target after equality check : ");
-            DumpRegister((),c1+[target]);
+            DumpRegister((), c1+[target]);
             //Return Qubits to |0⟩ state before releasing
             ResetAll(c1+[target]);
         }
