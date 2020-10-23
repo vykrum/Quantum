@@ -11,7 +11,28 @@ namespace QuantumHello {
     open Microsoft.Quantum.Oracles;
     open Microsoft.Quantum.Characterization;
   
+    @EntryPoint()
+    // Exploring Grovers Search Algorithm
+    operation SolveGraphColoringProblem() : Unit {
+        // The number of vertices is an integer
+        let nVertices = 5;
 
+        // Hard code the edges as tuples with start and end vertices
+        let edges = [(0,1), (0,2), (0,3), (1,2), (1,3), (2,3), (3,4)];
+
+        // Hardcoded Graph Coloring
+        let coloring = [false, false, true, false, false, true, true, true, true, false];
+        let colors = ["red", "green", "blue", "yellow"];
+
+        // Interpret the coloring : Split the bit string into two bit fragments and convert them to colors
+        let colorBits = Chunks(2, coloring);
+        for (i in 0..nVertices-1) {
+            let colorIndex = BoolArrayAsInt(colorBits[i]);
+            Message ($"Vertex {i} - color #{colorIndex} ({colors[colorIndex]})");
+        }
+
+
+    }
 
     // Random Qubit
     operation GenerateRandomBit() : Result {
@@ -174,7 +195,7 @@ namespace QuantumHello {
 
     }
 
-    @EntryPoint()
+    
     operation TestingEntanglement2() : Result[] {
         using (qubits = Qubit[2]) {
             H(qubits[0]);
