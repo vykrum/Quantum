@@ -10,7 +10,6 @@ namespace QuantumHello {
     open Microsoft.Quantum.Arithmetic;
     open Microsoft.Quantum.Oracles;
     open Microsoft.Quantum.Characterization;
-    open Microsoft.Quantum.Arrays;
 
   
     
