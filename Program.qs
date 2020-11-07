@@ -11,7 +11,47 @@ namespace QuantumHello {
     open Microsoft.Quantum.Oracles;
     open Microsoft.Quantum.Characterization;
 
-  
+    @EntryPoint()
+    // Qubits Demo
+    operation QubitsDemo() : Unit {
+        let divider = "-----------------------------------------";
+        using (q = Qubit()) {
+            Message("State |0⟩ :");
+            // State of the quantum computer
+            // Since only one qubit is allocated only it's state is printed
+            DumpMachine();
+            Message(divider);
+
+            // Change the state of the qubit from |0⟩ to |1⟩
+            X(q);
+            Message("State |1⟩ :");
+            DumpMachine();
+            Message(divider);
+
+            // Put the qubit into superposition
+            H(q);
+            Message("State |-⟩ :");
+            DumpMachine();
+            Message(divider);
+
+            // Change the state of the qubit to |-i⟩
+            S(q);
+            Message("State |-i⟩ :");
+            DumpMachine();
+            Message(divider);
+
+            // Put the Qubit in uneven superposition
+            Rx(2.0,q);
+            Ry(1.0,q);
+            Message("Uneven Superposition");
+            DumpMachine();
+            Message(divider);
+
+            // Return Qubit to state |0⟩
+            Reset(q);
+        }
+        
+    }
     
     // Exploring Grovers Search Algorithm
     operation MarkColorEquality(c0:Qubit[],c1:Qubit[],target:Qubit) : Unit is Adj+Ctl {
@@ -48,7 +88,7 @@ operation ApplyMarkingOracleAsPhaseOracle(
     }
 
 
-    @EntryPoint()
+    //@EntryPoint()
     operation ShowPhaseKickbackTrick() : Unit {
         using ((c0, c1) = (Qubit[2], Qubit[2])) {
             // Leave register c0 in the |00⟩ state.
