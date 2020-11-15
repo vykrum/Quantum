@@ -12,6 +12,49 @@ namespace QuantumHello {
     open Microsoft.Quantum.Characterization;
 
     @EntryPoint()
+    // Multi Qubit Systems Demo
+    operation MultiQubitsystemDemo() : Unit {
+        let divider = "-----------------------------------------";
+        // Allocate an arrayof two Qubits, each of them in state |0⟩
+        // The overall state of the system is |00⟩
+        using (qs = Qubit[2]){
+            // The X Gate changes the state of the first Qubit to |1⟩
+            // The state of the entire system is |10⟩
+            X(qs[0]);
+            Message ("System in state |10⟩ |1⟩ : ");
+            DumpMachine();
+            Message (divider);
+
+            // Change the second Qubit to state |+⟩
+            H(qs[1]);
+            Message ("System in state : ");
+            DumpMachine();
+            Message(divider);
+
+            // Change state of first Qubit to |-⟩
+            H(qs[0]);
+            Message ("System in state : ");
+            DumpMachine();
+            Message (divider);
+
+            // Examine state of first Qubit
+            Message ("State of First Qubit : ");
+            DumpMachine((),qs[0]);
+            Message (divider);
+
+            // Entangle the Qubits
+            H(qs[1]);
+            CNOT(qs[0],qs[1]);
+
+            // Examine Entangled State
+            Message ("Entangled State : ");
+            DumpMachine();
+            Message(divider);
+
+            ResetAll(qs);
+        }
+    }
+
     // Qubits Demo
     operation QubitsDemo() : Unit {
         let divider = "-----------------------------------------";
