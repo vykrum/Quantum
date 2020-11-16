@@ -12,6 +12,26 @@ namespace QuantumHello {
     open Microsoft.Quantum.Characterization;
 
     @EntryPoint()
+    operation BellState() : Unit {
+        using (qs = Qubit[2]) {
+            H(qs[0]);
+            CNOT(qs[0],qs[1]);
+            Message ("System State : ");
+            DumpMachine();
+            ResetAll(qs);
+        }
+    }
+
+    operation CompoundGate() : Unit {
+        using (qs = Qubit[3]) {
+            S(qs[0]);
+            H(qs[2]);
+            Message ("System State : ");
+            DumpMachine();
+            ResetAll(qs);
+        }
+    }
+
     // Multi Qubit Systems Demo
     operation MultiQubitsystemDemo() : Unit {
         let divider = "-----------------------------------------";
