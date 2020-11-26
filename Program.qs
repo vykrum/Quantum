@@ -12,6 +12,21 @@ namespace QuantumHello {
     open Microsoft.Quantum.Characterization;
 
     @EntryPoint()
+    operation ZeroandBitString() : Unit {
+        using (qs = Qubit[3]) {
+            H(qs[0]);
+            let bits = [true,true,true];
+            for (i in 1..Length(bits)-1){
+                if (bits[i]) {
+                    CNOT(qs[0],qs[i]);
+                }
+            }
+            DumpMachine();
+            ResetAll(qs);
+        }
+    }
+    
+
     operation BellState() : Unit {
         using (qs = Qubit[2]) {
             H(qs[0]);
